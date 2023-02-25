@@ -14,6 +14,9 @@ import Aboutphoto1 from './homeimages/section1ph1.png';
 import Aboutphoto2 from './homeimages/section1ph2.png';
 import Blogphoto1 from './homeimages/section2ph1.png';
 import Blogphoto2 from './homeimages/section2ph2.png';
+import Coursephoto1 from './homeimages/section3ph1.png';
+import Coursephoto2 from './homeimages/section3ph2.png';
+import Coursephoto3 from './homeimages/section3ph3.png';
 
 
 
@@ -119,7 +122,31 @@ return (
   <img className="slider-imagees3  bg-cover "  src={Traingle3}/>
   <img className="slider-imagees4  bg-cover " src={Traingle4}/>
 </div>
+<div className="absolute z-50">
+<div className="flex large-text  ">
+<p className="font-style  text-white  font-bold text-5xl ">أحدث الكورسات</p>
+<div className=" w-6 h-6 bg-orange-600 mr-5 mt-5 rounded-full "></div>
+</div>
 
+<div className="coures-div bg-white flex justify-around  mt-2">
+
+<div className="w-96 h-96 bg-black absolute ml-80 mt-72 z-50" ></div>
+<div className="course-div2">
+<div className=" h-52 w-64 mt-64 bg-gray-300 opacity-50 absolute z-30 ">
+</div>
+<img className="object-cover  mt-64 w-64 h-52 " src={Coursephoto3} />
+</div>
+
+<div className="mt-32 ml-20">
+<div className=" h-52 w-64 mr-72 mt-5 bg-orange-600 opacity-60 absolute  ">
+  </div>
+  <img className="object-cover mr-72 mt-5 w-64 h-52 " src={Coursephoto1} />
+  <img className="Coursephoto2 object-cover absolute -mt-72 ml-10" src={Coursephoto2} />
+  </div>
+
+</div>
+
+</div>
 </div>
 
 
