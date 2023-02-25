@@ -13,7 +13,6 @@ import ContactUs from "./Components/ContactUs/ContactUs"
 import CreateAnAccount from "./Components/CreateAnAccount/CreateAnAccount"
 import PurchaseATicket from "./Components/PurchaseATicket/PurchaseATicket"
 import Navbar from "./Components/Navbar/Navbar"
-import Footer from "./Components/Footer/Footer";
 import SelectCards from "./Components/SelectCards/Cards"
 import CardDetails from "./Components/CardDetails/Carddetails"
 import Meet from "./Components/About/Meet"
@@ -66,7 +65,7 @@ useEffect(() => {
 
       </Routes>
 
-  <Footer />
+  
   </div>
   </AuthProvider>
   );

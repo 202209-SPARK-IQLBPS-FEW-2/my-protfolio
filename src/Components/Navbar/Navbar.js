@@ -2,33 +2,45 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import logo from "./logo.png"
-import Dropdown from "./Dropdown"
+
 
 export default function Navbar() {
   return (
 
-       <nav className="navBarContainer flex flex-row justify-evenly" >
+       <nav className="site-nav  pt-1 inset-x-0 top-0 absolute z-30" >
 
-        <div className="flex flex-row gap-x-2">
-        <img src={logo} alt="logo" />
-        <h1 className="title text-[20px] sm:text-[40px]">Healing</h1>
-       </div>
+
+
             <ul className =" ListNavbar flex flex-row justify-center text-[15px]  items-center sm:gap-x-7 gap-x-4 sm:text-[20px] ">
-                 <li className ="navList">
-                    <Link to ="/">Home</Link>
+            <div><i className="fa-solid fa-user-plus text-white text-2xl pr-10 hover:text-orange-500"></i></div>
+      <div><i className="fa-solid fa-magnifying-glass text-white text-2xl pr-5 hover:text-orange-500"></i></div>
+                 <li className ="font-style mr-10 text-white text-2xl hover:text-orange-500 ">
+                    <Link to ="/">الرئيسية</Link>
                 </li>
-                <li className ="navList" >
-                    <Link to="/blogs">Blogs</Link>
+                <li className ="font-style mr-10 text-white text-2xl hover:text-orange-500" >
+                    <Link to="">من نحن</Link>
                 </li>
-                <li>
-                             <Dropdown/>
+                <li className ="font-style text-white mr-10 text-2xl hover:text-orange-500" >
+                    <Link to="">الموقع</Link>
                 </li>
-                <li className ="navList">
-                    <Link to="/contactUs">Contact Us</Link>
+
+                <div className="flex flex-row gap-x-2">
+                <img src={logo} alt="logo" />
+
+               </div>
+                <li className ="font-style mr-10 text-white text-2xl hover:text-orange-500" >
+                    <Link to="">المقالات</Link>
                 </li>
-                
-                   <button type="button" className=" press bg-cyan-400 rounded-md shadow-md px-5 py-1 hover:bg-cyan-600 " > <Link to="/signIn">Log In</Link> </button>
-                
-              
+
+                <li className ="font-style mr-10 text-white text-2xl hover:text-orange-500">
+                    <Link to="">الدورات</Link>
+                </li>
+                <li className ="font-style text-white mr-14 text-2xl hover:text-orange-500">
+                    <Link to="">المزيد</Link>
+                </li>
+
+
+
+
             </ul>
        </nav> )}

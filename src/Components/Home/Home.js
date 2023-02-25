@@ -1,206 +1,126 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './Home.css';
-import Background from './homeimages/background.png';
-import Pic1 from './homeimages/main-image.png';
-import Pic2 from './homeimages/therapist1.jpg';
-import Pic3 from './homeimages/therapist2.jpg';
-import Pic4 from './homeimages/therapist3.jpg';
-import Pic5 from './homeimages/therapist4.jpg';
-import Pic6 from './homeimages/therapist5.jpg';
-import truamaimage from "../Blog/TraumaBlog.png";
-import depressionImage from "../Blog/depression.png";
-import blogImage from "../Blog/firstPic.png";
-import Button1 from './button';
-import PurchaseATicket from "../PurchaseATicket/PurchaseATicket";
+import Pic1 from './homeimages/1.png';
+import Pic2 from './homeimages/2.png';
+import Pic3 from './homeimages/3.png';
+import Pic4 from './homeimages/4.png';
+import Traingle1 from './homeimages/traingle1.png';
+import Traingle2 from './homeimages/traingle2.png';
+import Traingle3 from './homeimages/traingle3.png';
+import Traingle4 from './homeimages/traingle4.png';
+import Traingle5 from './homeimages/traingle5.png';
+import Regtangle1 from './homeimages/regtangle1.png';
+import Aboutphoto1 from './homeimages/section1ph1.png';
+import Aboutphoto2 from './homeimages/section1ph2.png';
+import Blogphoto1 from './homeimages/section2ph1.png';
+import Blogphoto2 from './homeimages/section2ph2.png';
 
 
 
 export default function Home() {
 
+return (
+<div>
 
-  const [isSignedIn, setIsSignedIn] = useState(false);
 
-  useEffect(() => {
-    setIsSignedIn(localStorage.getItem('isSignedIn') === 'true');
-  }, []);
-
-  const handleClick = () => {
-    if (!isSignedIn) {
-      alert("Please sign in to book an appointment.");
-      return;
-    }
-
-  };
-
-  return (
-
-<div >
-
+<div className="slider relative ">
 
 <div>
-<img src={Background} alt="background" className="object-cover"/>
-<div className="absolute flex -mt-96  " >
-<div className="w-2/4 ml-48 -mt-20 center">
-<p className="font-style font-bold text-3xl">WE ARE HERE TO</p>
-<p className="font-style font-bold text-8xl">HELP</p>
-{/* <Link to="/booking">
-<Button1  p="BOOK AN APPOINTMENT"/></Link> */}
-  <div className="ml-4 pb-20">
-         <Link to="/booking">
-         <Button1 p="BOOK AN APPOINTMENT" onClick={handleClick} />
-         </Link>
-       </div>
-</div>
-<div className="w-3/4 -mt-32 mr-20"><img src={Pic1} alt="background" className=""/></div>
-</div>
-</div>
+  <img className="slider-imagees1  bg-cover "  src={Traingle1}/>
+  <img className="slider-imagees2   bg-cover " src={Traingle2}/>
 
-
-<div className="bg-yellow-200 w-full pl-40 h-auto">
-<p className="font-style font-bold text-4xl mt-5 pt-20   uppercase">Professional, licensed, and vetted <br/>therapists that you can trust</p>
-<div className="flex mt-16  ">
-<div><img  src={Pic2} alt="" className="bg-cover bg-center rounded-full bg-white border-2 w-32 h-32 border-sky-900 mr-3"/></div>
-<div><img  src={Pic3}  alt="" className="bg-cover bg-center rounded-full bg-white border-2 w-32 h-32 border-sky-900 mr-3"/></div>
-<div><img  src={Pic4}  alt="" className="bg-cover bg-center rounded-full bg-white border-2 w-32 h-32 border-sky-900 mr-3"/></div>
-<div><img  src={Pic5}  alt="" className="bg-cover  rounded-full bg-white border-2 w-32 h-32 border-sky-900 mr-3"/></div>
-<div><img  src={Pic6}  alt="" className="bg-cover  rounded-full bg-white border-2 w-32 h-32 border-sky-900 mr-3"/></div>
-</div>
-<p className="font-style  font-bold text-xl pt-14  mr-32">Tap into the world largest network of licensed, accredited, and experienced therapists who can help you with a range of issues including depression, anxiety, relationships, trauma, grief, and more. with our therapists, you get the same professionalism and quality you would expect from an in-office therapist, but with the ability to communicate whenever and however you want.</p>
-<div className="ml-4 pb-20"><Button1  p="BOOK AN APPOINTMENT"/></div>
-
-</div>
-
-
-
-
-<div className="w-full h-auto ">
-<p className="font-style  font-bold text-4xl mt-5 pl-40 pt-20   uppercase">we can communicate through</p>
-<div className="flex justify-between  m-20">
-
-<div className=" w-80 h-80 bg-white shadow-2xl shadow-gray-500 mr-5 rounded-3xl ">
-<div className="flex justify-center mt-10"><i className="fa-solid fa-phone text-7xl "/></div>
-<div className="flex justify-center mt-5">
-<p className=" font-style font-bold text-4xl  ">Voice Call</p>
-</div>
-<div className="flex justify-center mt-3">
-<p className="  font-style  font-semibold text-md text-center 	ml-8 mr-8 ">Feeling ready to start a conversation? Give your therapist a voice call and talk your heart out!</p>
-</div>
-</div>
-<div className="w-80 h-80 bg-white shadow-2xl shadow-gray-500 mr-5 rounded-3xl center">
-<div className="flex justify-center mt-10"><i className="fa-solid fa-comments text-7xl"/></div>
-<div className="flex justify-center mt-5">
-<p className="font-style font-bold text-4xl  ">Chat</p>
-</div>
-<div className="flex justify-center mt-3">
-<p className="  font-style  font-semibold text-md text-center 	ml-8 mr-8 ">Need to talk to someone?<br/>Come have a chat with your<br/> therapist!</p>
-</div>
-</div>
-<div className="w-80 h-80 bg-white shadow-2xl shadow-gray-500  rounded-3xl center">
-<div className="flex justify-center mt-10"><i className="fa-solid fa-video text-7xl"/></div>
-<div className="flex justify-center mt-5">
-<p className=" font-style font-bold text-4xl  ">Video Call</p>
-</div>
-<div className="flex justify-center mt-3">
-<p className="  font-style  font-semibold text-md text-center 	ml-8 mr-8 ">For better experience therapists recommend video calls, but always remember that its a choice!</p>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-<div className="slide1-div w-full h-auto ">
-<p className="font-style font-bold text-4xl mt-5 pt-20 pl-40  uppercase">recent blogs</p>
-
-<div className="slider ml-16">
-    <div className="slides">
-      <div id="slides__1" className="slide1 flex  ">
-       <Link to="/traumaBlog">
-       <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-       <img src={truamaimage} alt="pic1"  className="w-80 h-56"/>
-      </div></Link>
-       <Link to="/depression">
-       <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-       <img src={depressionImage} alt="pic1"  className="w-80 h-56"/>
-
-      </div></Link>
-        <Link to="/blogs">
-       <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-
-       <img src={blogImage} alt="pic1"  className="w-80 h-56"/>
-
-      </div></Link>
-        <a className="slide__prev" href="#slides__4" title="Next">.</a>
-        <a className="slide__next" href="#slides__2" title="Next">.</a>
       </div>
-      <div id="slides__2" className="slide1 ">
-      <Link to="/traumaBlog">
-      <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-      <img src={truamaimage} alt="pic1"  className="w-80 h-56"/>
-     </div></Link>
-      <Link to="/depression">
-      <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-      <img src={depressionImage} alt="pic1"  className="w-80 h-56"/>
 
-     </div></Link>
-       <Link to="/blogs">
-      <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
+  <button className="slider-button ml-20 px-12 py-3 text-white text-2xl font-bold  rounded-full absolute z-50 transform hover:scale-105" >تعرف علينا</button>
+        <input type="radio" name="slider" title="slide1" checked="checked" className="slider__nav ml-auto  " />
+        <input type="radio" name="slider" title="slide2" className="slider__nav  " />
+        <input type="radio" name="slider" title="slide3" className="slider__nav " />
+        <input type="radio" name="slider" title="slide4" className="slider__nav mr-10 " />
 
-      <img src={blogImage} alt="pic1"  className="w-80 h-56"/>
 
-     </div></Link>
-        <a className="slide__prev" href="#slides__1" title="Prev">.</a>
-        <a className="slide__next" href="#slides__3" title="Next" >.</a>
-      </div>
-      <div id="slides__3" className="slide1">
-      <Link to="/traumaBlog">
-      <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-      <img src={truamaimage} alt="pic1"  className="w-80 h-56"/>
-     </div></Link>
-      <Link to="/depression">
-      <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-      <img src={depressionImage} alt="pic1"  className="w-80 h-56"/>
+<div className="slider__inner ">
 
-     </div></Link>
-       <Link to="/blogs">
-      <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-
-      <img src={blogImage} alt="pic1"  className="w-80 h-56"/>
-
-     </div></Link>
-        <a className="slide__prev" href="#slides__2" title="Prev" >.</a>
-        <a className="slide__next" href="#slides__4" title="Next" >.</a>
-      </div>
-      <div id="slides__4" className="slide1">
-      <Link to="/traumaBlog">
-      <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-      <img src={truamaimage} alt="pic1"  className="w-80 h-56"/>
-     </div></Link>
-      <Link to="/depression">
-      <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-      <img src={depressionImage} alt="pic1"  className="w-80 h-56"/>
-
-     </div></Link>
-       <Link to="/blogs">
-      <div className="w-80 h-56 bg-white text-white mr-5 rounded-lg">
-
-      <img src={blogImage} alt="pic1"  className="w-80 h-56"/>
-
-     </div></Link>
-        <a className="slide__prev" href="#slides__3" title="Prev">.</a>
-        <a className="slide__next" href="#slides__1" title="Prev" >.</a>
-      </div>
+    <div className="slider__contents bg-cover  ">
+     <img  src={Pic1} alt="logo" />
     </div>
+
+    <div className="slider__contents bg-cover" >
+    <img  src={Pic2} alt="logo" />
+    </div>
+    <div className="slider__contents bg-cover  " >
+     <img src={Pic3} alt="logo" />
+    </div>
+    <div className="slider__contents bg-cover  " >
+     <img src={Pic4} alt="logo" />
+    </div>
+</div>
+
+</div>
+
+
+<div className="mt-24">
+<div className="flex justify-center ml-20 ">
+<p className="font-style text-black text-6xl ">نبذة عنا</p>
+<p className="absolute font-style2  text-6xl ">ة</p>
+<p className="absolute mr-32 ml-2 font-style2   text-6xl ">نا</p>
+</div>
+
+<div className="flex ml-32 justify-between w-auto h-80 mt-32">
+<div>
+  <div className="hover-div h-72   bg-orange-600 opacity-60 absolute ">
+  </div>
+  <img className="object-cover  w-80 h-72 " src={Aboutphoto1} />
+  <img className="Aboutphoto2 object-cover absolute  w-96 h-64 ml-10" src={Aboutphoto2} />
+  </div>
+
+<div className=" ml-20 ">
+<p className="font-style text-black text-center font-bold text-4xl ml-24">من نحن</p>
+<div className="pl-60 pr-32 "><p className="font-style2 text-center mt-10  text-2xl">نيتروجين مراهنة على إقناعكم أنّ الكيمياء واحدة من أمتع الأشياء بالحياة</p></div>
+<div className="flex justify-center"><button className="slider-button  shadow-lg shadow-gray-500 px-12 py-3 ml-24 mt-10 text-white text-2xl font-bold  rounded-full absolute z-50 transform hover:scale-105" >أضغط للمزيد</button></div>
+</div>
+
+</div>
+</div>
+
+
+
+<div className="mt-24 mr-32 mb-44 ">
+
+<div className="flex  justify-around w-auto h-80 mt-32">
+
+<div className=" mt-10 mr-52">
+<div className="flex justify-center  ">
+<p className="font-style text-black text-center font-bold text-4xl ">منو ماري كوري؟</p>
+<p className="font-style2 absolute  -ml-44  font-bold text-4xl ">؟</p>
+</div>
+<div className="ml-32 mr-32 "><p className="font-style text-gray-500 text-center mt-10  text-2xl">ماري كوري هي الإنسان الوحيد الحاصل على جائزتي نوبل في الفيزياء والكيمياء</p></div>
+<div className="flex justify-center"><button className="font-style2 shadow-lg shadow-gray-500  px-12 py-3  mt-10 text-2xl font-bold border border-black rounded-full absolute z-50 transform hover:scale-105" >تصفح هنا</button></div>
+</div>
+
+<div>
+  <div className="hover-div2 h-72  -ml-10  bg-gray-400 opacity-60 absolute ">
+  </div>
+  <img className="object-cover  -ml-10 w-96 h-72 " src={Blogphoto2} />
+  <img className="Aboutphoto2 object-cover absolute -mt-72 -ml-44 w-96 h-80 " src={Blogphoto1} />
   </div>
 
 </div>
+</div>
 
 
 
-<PurchaseATicket/>
+<div className="direction">
 
+<div >
+<img className="bg-cover absolute z-20 mt-7"  src={Traingle5}/>
+<img className="bg-cover absolute z-30 mt-56"  src={Regtangle1}/>
+</div>
+<div >
+  <img className="slider-imagees3  bg-cover "  src={Traingle3}/>
+  <img className="slider-imagees4  bg-cover " src={Traingle4}/>
+</div>
+
+</div>
 
 
 </div>
