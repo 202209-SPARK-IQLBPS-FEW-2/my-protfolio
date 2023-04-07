@@ -1,47 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
-
-.font-style{
-font-family: 'Rakkas',cursive;
-}
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Dongle&family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kadwa&display=swap');
 
 .site-nav {
-  background-color: #;
-  opacity:0.9;
   display: flex;
   align-items: center;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-  direction: rtl;
 
-  a {
+}
 
-    text-decoration: none;
-    color: black;
-    padding: 18px 6px;
-    margin: 0px 8px;
-    border-bottom: 3px solid transparent;
-    font-family: 'Rakkas';
-
-
-    &:hover {
-      border-color: #2BDE73;
-    }
-
-
-  }
-  .left {
-    flex: 2;
-    display: flex;
-  }
-
-  .middle {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-
-  .right {
-    flex: 2;
-    display: flex;
-    justify-content: flex-end;
-  }
+.header-font a{
+font-family: 'Almarai', sans-serif;
+font-family: 'Italiana', serif;
 }

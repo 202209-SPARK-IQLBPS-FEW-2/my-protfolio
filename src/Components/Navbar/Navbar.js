@@ -1,43 +1,37 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import logo from "./logo.png"
+
 
 
 export default function Navbar() {
   return (
 
-       <nav className="site-nav  pt-1 inset-x-0 top-0 absolute z-30" >
+       <nav className="site-nav bg-black opacity-10 h-16 pt-1 inset-x-0 top-0  " >
 
 
 
-            <ul className =" ListNavbar flex flex-row justify-center text-[15px]  items-center sm:gap-x-7 gap-x-4 sm:text-[20px] ">
-            <div><i className="fa-solid fa-user-plus text-white text-2xl pr-10 hover:text-orange-500"></i></div>
-      <div><i className="fa-solid fa-magnifying-glass text-white text-2xl pr-5 hover:text-orange-500"></i></div>
-                 <li className ="font-style mr-10 text-white text-2xl hover:text-orange-500 ">
-                    <Link to ="/">الرئيسية</Link>
+            <ul className =" header-font flex flex-row justify-center text-[15px]  items-center sm:gap-x-7 gap-x-4 sm:text-[20px] ">
+
+                 <li className ="text-2xl text-white ml-10 ">
+                    <Link to ="/">Ho<span className="text-red-800">m</span>e</Link>
                 </li>
-                <li className ="font-style mr-10 text-white text-2xl hover:text-orange-500" >
-                    <Link to="">من نحن</Link>
+                <li className ="text-white text-2xl ml-12 " >
+                    <Link to="">About</Link>
                 </li>
-                <li className ="font-style text-white mr-10 text-2xl hover:text-orange-500" >
-                    <Link to="">الموقع</Link>
+                <li className ="text-white  text-2xl ml-12" >
+                    <Link to="">protofilo</Link>
                 </li>
 
-                <div className="flex flex-row gap-x-2">
-                <img src={logo} alt="logo" />
 
-               </div>
-                <li className ="font-style mr-10 text-white text-2xl hover:text-orange-500" >
-                    <Link to="">المقالات</Link>
+                <li className ="text-white  text-2xl ml-12" >
+                    <Link to="">Resume</Link>
                 </li>
 
-                <li className ="font-style mr-10 text-white text-2xl hover:text-orange-500">
-                    <Link to="">الدورات</Link>
+                <li className ="text-white  text-2xl ml-12">
+                    <Link to="">contact</Link>
                 </li>
-                <li className ="font-style text-white mr-14 text-2xl hover:text-orange-500">
-                    <Link to="">المزيد</Link>
-                </li>
+
 
 
 
