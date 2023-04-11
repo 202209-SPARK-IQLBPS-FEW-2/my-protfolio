@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kadwa&display=swap');
 
 .site-nav {
+  background-color: #;
+  opacity:0.9;
   display: flex;
   align-items: center;
-
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 
 .header-font a{

@@ -1,40 +1,40 @@
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import {HashLink as Link } from "react-router-hash-link";
 
 
 
 export default function Navbar() {
   return (
 
-       <nav className="site-nav bg-black opacity-10 h-16 pt-1 inset-x-0 top-0  " >
+       <nav className="site-nav w-full h-16  pt-1 inset-x-0 top-0 absolute z-30 " >
 
 
-
-            <ul className =" header-font flex flex-row justify-center text-[15px]  items-center sm:gap-x-7 gap-x-4 sm:text-[20px] ">
+           <div className="absolute z-50">
+            <ul className =" header-font flex flex-row justify-center  text-[15px]  items-center sm:gap-x-7 gap-x-4 sm:text-[20px] ">
 
                  <li className ="text-2xl text-white ml-10 ">
-                    <Link to ="/">Ho<span className="text-red-800">m</span>e</Link>
+                    <Link to ="#Home">Ho<span className="text-red-800">m</span>e</Link>
                 </li>
                 <li className ="text-white text-2xl ml-12 " >
-                    <Link to="">About</Link>
+                    <Link to="#About">About</Link>
                 </li>
                 <li className ="text-white  text-2xl ml-12" >
-                    <Link to="">protofilo</Link>
+                    <Link to="#Protofilo">protofilo</Link>
                 </li>
 
 
                 <li className ="text-white  text-2xl ml-12" >
-                    <Link to="">Resume</Link>
+                    <Link to="https://github.com/rokayaamjaad/MY-resume.git">Resume</Link>
                 </li>
 
                 <li className ="text-white  text-2xl ml-12">
-                    <Link to="">contact</Link>
+                    <Link to="#Contact">contact</Link>
                 </li>
 
 
 
 
 
-            </ul>
+            </ul></div>
        </nav> )}

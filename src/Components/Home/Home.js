@@ -1,156 +1,56 @@
 import React from 'react';
 import './Home.css';
-import Pic1 from './homeimages/1.png';
-import Pic2 from './homeimages/2.png';
-import Pic3 from './homeimages/3.png';
-import Pic4 from './homeimages/4.png';
-import Traingle1 from './homeimages/traingle1.png';
-import Traingle2 from './homeimages/traingle2.png';
-import Traingle3 from './homeimages/traingle3.png';
-import Traingle4 from './homeimages/traingle4.png';
-import Traingle5 from './homeimages/traingle5.png';
-import Regtangle1 from './homeimages/regtangle1.png';
-import Aboutphoto1 from './homeimages/section1ph1.png';
-import Aboutphoto2 from './homeimages/section1ph2.png';
-import Blogphoto1 from './homeimages/section2ph1.png';
-import Blogphoto2 from './homeimages/section2ph2.png';
-import Coursephoto1 from './homeimages/section3ph1.png';
-import Coursephoto2 from './homeimages/section3ph2.png';
-import Coursephoto3 from './homeimages/section3ph3.png';
-
-
-
+import { Link } from "react-router-dom";
+import background from './homeimages/background.png';
+import About from "../About/About";
+import ContactUs from "../ContactUs/ContactUs";
+import Protofilo from "../Protofilo/Protofilo";
 export default function Home() {
 
 return (
-<div>
 
+  <section id="Home" className="navigation">
+  <div  className="maindiv-height w-full bg-black">
 
-<div className="slider relative ">
-
-<div>
-  <img className="slider-imagees1  bg-cover "  src={Traingle1}/>
-  <img className="slider-imagees2   bg-cover " src={Traingle2}/>
-
+<div  className="flex">
+    <div className="main-div1 ml-auto">
+      <div className="main-circle mt-44 w-96 h-96 rounded-full relative" ></div>
+      <div className="protofilo-p2 absolute">
+        <p className="text1 protofilo-p1 text-8xl text-white" data-aos="fade-right">PRO</p>
+        <p className="text2 protofilo-p1 text-8xl text-white" data-aos="fade-left">TO</p>
+        <p className="text3 protofilo-p1 text-8xl text-white" data-aos="fade-right">FILO</p>
+        <div className="regtangile1 w-42 h-1 rounded-lg  mb-10 " data-aos="fade-right"></div>
+        <div className="regtangile2 w-42 h-1 rounded-lg bg-white" data-aos="fade-right" ></div>
+        <p className="name1 text-4xl  protofilo-p1 mt-40 z-30">ROKAYA AMJAAD</p>
+        <p className="name2 text-4xl protofilo-p1  text-white ">ROKAYA AMJAAD</p>
+        <div className="ml-60 " >
+          <p className="click text-3xl protofilo-p1 capitalize ml-5 text-white ">Click</p>
+          <p className="here1 text-3xl protofilo-p1 capitalize ml-10">Here</p>
+          <p className="here2 text-3xl protofilo-p1 capitalize text-white ml-10">Here</p>
+        </div>
+      <Link to="https://github.com/rokayaamjaad/MY-resume.git"><div className="small-circle w-32 h-32 rounded-full bg-white opacity-30 ml-60 border-4 border-black hover:scale-125">
+        </div></Link>
       </div>
-
-  <button className="slider-button ml-20 px-12 py-3 text-white text-2xl font-bold  rounded-full absolute z-50 transform hover:scale-105" >تعرف علينا</button>
-        <input type="radio" name="slider" title="slide1" checked="checked" className="slider__nav ml-auto  " />
-        <input type="radio" name="slider" title="slide2" className="slider__nav  " />
-        <input type="radio" name="slider" title="slide3" className="slider__nav " />
-        <input type="radio" name="slider" title="slide4" className="slider__nav mr-10 " />
-
-
-<div className="slider__inner ">
-
-    <div className="slider__contents bg-cover  ">
-     <img  src={Pic1} alt="logo" />
     </div>
 
-    <div className="slider__contents bg-cover" >
-    <img  src={Pic2} alt="logo" />
-    </div>
-    <div className="slider__contents bg-cover  " >
-     <img src={Pic3} alt="logo" />
-    </div>
-    <div className="slider__contents bg-cover  " >
-     <img src={Pic4} alt="logo" />
-    </div>
-</div>
-
-</div>
-
-
-<div className="mt-24">
-<div className="flex justify-center ml-20 ">
-<p className="font-style text-black text-6xl ">نبذة عنا</p>
-<p className="absolute font-style2  text-6xl ">ة</p>
-<p className="absolute mr-32 ml-2 font-style2   text-6xl ">نا</p>
-</div>
-
-<div className="flex ml-32 justify-between w-auto h-80 mt-32">
-<div>
-  <div className="hover-div h-72   bg-orange-600 opacity-60 absolute ">
+  <div className="main-div2">
+    <img className="main-image" src={background} alt="background"/>
   </div>
-  <img className="object-cover  w-80 h-72 " src={Aboutphoto1} />
-  <img className="Aboutphoto2 object-cover absolute  w-96 h-64 ml-10" src={Aboutphoto2} />
   </div>
 
-<div className=" ml-20 ">
-<p className="font-style text-black text-center font-bold text-4xl ml-24">من نحن</p>
-<div className="pl-60 pr-32 "><p className="font-style2 text-center mt-10  text-2xl">نيتروجين مراهنة على إقناعكم أنّ الكيمياء واحدة من أمتع الأشياء بالحياة</p></div>
-<div className="flex justify-center"><button className="slider-button  shadow-lg shadow-gray-500 px-12 py-3 ml-24 mt-10 text-white text-2xl font-bold  rounded-full absolute z-50 transform hover:scale-105" >أضغط للمزيد</button></div>
-</div>
-
-</div>
-</div>
-
-
-
-<div className="mt-24 mr-32 mb-44 ">
-
-<div className="flex  justify-around w-auto h-80 mt-32">
-
-<div className=" mt-10 mr-52">
-<div className="flex justify-center  ">
-<p className="font-style text-black text-center font-bold text-4xl ">منو ماري كوري؟</p>
-<p className="font-style2 absolute  -ml-44  font-bold text-4xl ">؟</p>
-</div>
-<div className="ml-32 mr-32 "><p className="font-style text-gray-500 text-center mt-10  text-2xl">ماري كوري هي الإنسان الوحيد الحاصل على جائزتي نوبل في الفيزياء والكيمياء</p></div>
-<div className="flex justify-center"><button className="font-style2 shadow-lg shadow-gray-500  px-12 py-3  mt-10 text-2xl font-bold border border-black rounded-full absolute z-50 transform hover:scale-105" >تصفح هنا</button></div>
-</div>
-
-<div>
-  <div className="hover-div2 h-72  -ml-10  bg-gray-400 opacity-60 absolute ">
-  </div>
-  <img className="object-cover  -ml-10 w-96 h-72 " src={Blogphoto2} />
-  <img className="Aboutphoto2 object-cover absolute -mt-72 -ml-44 w-96 h-80 " src={Blogphoto1} />
   </div>
 
-</div>
-</div>
+<About/>
+
+<Protofilo/>
 
 
-
-<div className="direction">
-
-<div >
-<img className="bg-cover absolute z-20 mt-7"  src={Traingle5}/>
-<img className="bg-cover absolute z-30 mt-56"  src={Regtangle1}/>
-</div>
-<div >
-  <img className="slider-imagees3  bg-cover "  src={Traingle3}/>
-  <img className="slider-imagees4  bg-cover " src={Traingle4}/>
-</div>
-<div className="absolute z-50">
-<div className="flex large-text  ">
-<p className="font-style  text-white  font-bold text-5xl ">أحدث الكورسات</p>
-<div className=" w-6 h-6 bg-orange-600 mr-5 mt-5 rounded-full "></div>
-</div>
-
-<div className="coures-div bg-white flex justify-around  mt-2">
-
-<div className="w-96 h-96 bg-black absolute ml-80 mt-72 z-50" ></div>
-<div className="course-div2">
-<div className=" h-52 w-64 mt-64 bg-gray-300 opacity-50 absolute z-30 ">
-</div>
-<img className="object-cover  mt-64 w-64 h-52 " src={Coursephoto3} />
-</div>
-
-<div className="mt-32 ml-20">
-<div className=" h-52 w-64 mr-72 mt-5 bg-orange-600 opacity-60 absolute  ">
-  </div>
-  <img className="object-cover mr-72 mt-5 w-64 h-52 " src={Coursephoto1} />
-  <img className="Coursephoto2 object-cover absolute -mt-72 ml-10" src={Coursephoto2} />
-  </div>
-
-</div>
-
-</div>
-</div>
+<ContactUs/>
 
 
-</div>
+</section>
+
+
 
 
        )}

@@ -1,33 +1,37 @@
 import React from "react";
 import "./About.css";
-import luck from "./luck.jpg"
-// import { Link } from "react-router-dom";
+import '../Home/Home.css';
+
 
 
 export default function About() {
   return (
-    <div>
-      <div>
-<h1 className="sm:px-48 px-2 pt-8 font-normal font-sans text-xl  md:text-2xl">HEALING!</h1>
+    <section id="About" className="About-section flex ">
+    <div className="w-full h-auto bg-white mb-20">
+    <div className="reative w-96 h-96 rounded-full border-4 border-red-900 ml-auto mt-32 mr-40 shadow-xl shadow-gray-900 ">
+    <div className="absolute">
 
-<p className="sm:px-48 px-2 text-zinc-500 font-sans text-xs sm:text-sm md:text-s normal-case ">some cool one liner!</p>
-<p className="sm:px-48 px-2 pt-8 pb-12 font-sans text-xs sm:text-sm md:text-l  break-keep normal-case">At Healing, we believe there 
-is a better way to do things. A more valuable way where customers are earned rather than
-bought. We re obsessively passionate about it, and our mission is to help people achieve it. 
-We focus on search engine optimization. It s one of the least understood and least transparent
- aspects of great marketing, and we see that as an opportunity. We re excited to simplify SEO for 
- everyone through our software, education, and community.</p>
- </div>
-<div className="sm:py-2 bg-cyan-50 flex items-stretch ">
-<img className="sm:w-56 w-56 h-56 sm:ml-56 ml-2 sm:py-2 py-8" src={luck} alt="luck" />
-<div>
-<h2 className="sm:px-16 px-4 pt-4 font-sans  text-xl sm:text-xl md:text-2xl">Our Founding</h2>
-<p className="sm:px-16 px-4 sm:pr-32 font-sans pt-2 pb-8 text-xs sm:text-sm md:text-l normal-case">Healing was founded  in 2021. It was called Healing Online, and started as a blog and an online community where some of the world s therapists shared their research and ideas. We launched the Beginner s Guide to Therapy and our first study, and that hub of industry expertise transformed into a small consulting firm and led us to create the Online Therapist of today!</p>
- </div>
- </div>
+    <p className="about-font1  text-8xl center text-black " data-aos="fade-right">ABO</p>
+    <p className="about-font2 text-8xl center text-black ml-16" data-aos="fade-left">UT</p>
+    <p className="about-font3  text-8xl center text-black" data-aos="fade-right" >ME</p>
+    <div className="regtangile3 w-32 h-1 rounded-lg ml-32 mb-5 " data-aos="fade-right" ></div>
+    <div className="regtangile4 w-32 h-1 rounded-lg bg-black ml-20" data-aos="fade-right" ></div>
+    </div>
+    </div>
 
-
-</div>
+    <div className="mr-10">
+    <div className="regtangile5 absolute w-40 h-8 rounded-full ml-40 shadow-md shadow-gray-900"></div>
+    <div className="absolute ml-36">
+    <p className="about-header text-black text-5xl " >HELLO</p>
+    <p className="who-ami text-black text-xl ml-20">Who am i</p>
+    <div className="regtangile6 w-6 h-1 rounded-lg bg-white mt-5 ml-7 z-30 "></div>
+    <div className="about-blackcircle w-14 h-14 rounded-full bg-transparent ml-36 border-2 border-black shadow-md shadow-gray-900 ">
+    </div>
+    </div>
+    <p className="about-p absolute ml-36 text-black text-lg normal-case text-center">Web Developer and Senior Engineering student,  <br/>passionate in Technology and Programming <br/>field especially, had two years of experience <br/>in working as a front-end web developer, <br/> I am a fast learner,anda very good team player <br/>that can Build very complex designs <br/>and implement them easily.</p>
+    </div>
+    </div>
+    </section>
 
 
 )}
